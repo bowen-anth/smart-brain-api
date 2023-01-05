@@ -1,6 +1,6 @@
 const { json } = require('body-parser');
 const Clarifai = require('clarifai');
-// const dotenv = require('dotenv').config();
+const dotenv = require('dotenv').config();
 
 const app = new Clarifai.App({
     apiKey: process.env.CLARIFAI_KEY

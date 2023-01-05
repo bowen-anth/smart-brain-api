@@ -8,7 +8,7 @@ const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
-// const dotenv = require('dotenv').config();
+const dotenv = require('dotenv').config();
 const port = process.env.PORT || 3001;
 
 const db = knex({
