@@ -14,7 +14,7 @@ const port = process.env.PORT || 3001;
 const db = knex({
     client: 'pg',
     connection: {
-        connection : process.env.DATABASE_URL,
+        connectionString : process.env.DATABASE_URL,
         ssl: true,
     }
 });
@@ -37,6 +37,6 @@ app.post('/imageurl', (req, res) => { image.handleApiCall(req, res) })
 // app.listen(port, () => {
 //     console.log('app running on port ${process.env.PORT');
 // })
-app.listen(port || 3001, () => {
+app.listen(port, () => {
     console.log(`app running on port ${port}`);
 })
