@@ -15,7 +15,7 @@ app.models
         res.json(data);
     })
     // .catch(err => res.status(400).json('Unable to work with API'))
-    .catch(err => console.log(err))
+    .catch(err => console.log(process.env.CLARIFAI_KEY))
 }
 
 const handleImage = (req, res, db) => {
