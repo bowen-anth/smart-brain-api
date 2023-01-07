@@ -14,7 +14,8 @@ app.models
     .then(data => {
         res.json(data);
     })
-    .catch(err => res.status(400).json('Unable to work with API'))
+    // .catch(err => res.status(400).json('Unable to work with API'))
+    .catch(err => console.log(err))
 }
 
 const handleImage = (req, res, db) => {
